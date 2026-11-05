@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptune</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="planet-page neptune-page">
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="brand">Neptune</div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="webdev-day1.html">Home</a>
+          <a href="sun.html">Sun</a>
+          <a href="moon.html">Moon</a>
+          <a href="earth.html">Earth</a>
+          <a href="mercury.html">Mercury</a>
+          <a href="venus.html">Venus</a>
+          <a href="mars.html">Mars</a>
+          <a href="jupiter.html">Jupiter</a>
+          <a href="saturn.html">Saturn</a>
+          <a href="uranus.html">Uranus</a>
+          <a href="neptune.html">Neptune</a>
+        </nav>
+      </header>
+
+      <main class="planet-hero">
+        <div class="planet-visual">
+          <img src="assests/neptune-removebg-preview.png" alt="Neptune illustration">
+        </div>
+
+        <div class="planet-copy">
+          <h1>Neptune</h1>
+          <p>
+            Neptune is a dark blue ice giant and the farthest planet from the Sun. It has some of the fastest winds in the solar system.
+          </p>
+          <div class="fact-grid">
+            <div class="fact-box">
+              <h3>Type</h3>
+              <p>Ice giant</p>
+            </div>
+            <div class="fact-box">
+              <h3>Winds</h3>
+              <p>Up to 2,000 km/h</p>
+            </div>
+            <div class="fact-box">
+              <h3>Fun Fact</h3>
+              <p>Farthest major planet</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <section class="panel nasa-gallery-panel" aria-labelledby="nasa-gallery-title">
+        <div class="nasa-gallery-heading">
+          <p class="nasa-gallery-label">NASA IMAGE ARCHIVE</p>
+          <h2 id="nasa-gallery-title">What does Neptune actually look like in real life?</h2>
+        </div>
+        <div class="nasa-photo-grid">
+          <figure class="nasa-photo">
+            <img src="assests/nasa/neptune-voyager.jpg" alt="Neptune's blue disk as photographed by Voyager 2." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">Neptune from Voyager 2</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/PIA01492" target="_blank" rel="noopener noreferrer">NASA / Voyager 2 — PIA01492</a>
+            </figcaption>
+          </figure>
+          <figure class="nasa-photo">
+            <img src="assests/nasa/neptune-dark-spot.jpg" alt="Neptune's Great Dark Spot and bright clouds, reconstructed from Voyager 2 images." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">The Great Dark Spot</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/PIA00049" target="_blank" rel="noopener noreferrer">NASA / Voyager 2 — PIA00049</a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="info-grid">
+        <div class="panel">
+          <h2>About Neptune</h2>
+          <p>
+            Methane in Neptune's atmosphere absorbs red light, which contributes to its blue color. The planet is very cold, and its storms can change over time.
+          </p>
+          <ul>
+            <li>Astronomers predicted where Neptune was before they saw it through a telescope.</li>
+            <li>Its biggest storm is called the Great Dark Spot.</li>
+            <li>It is the farthest planet from the Sun.</li>
+          </ul>
+          <a class="source-link" href="https://science.nasa.gov/neptune/neptune-facts/" target="_blank" rel="noopener noreferrer">Check these facts with NASA</a>
+        </div>
+
+        <div class="panel calc-box" data-gravity="1.14" data-planet="Neptune">
+          <h2>Weight on Neptune</h2>
+          <label for="neptune-weight">Your weight on Earth (lbs)</label>
+          <input id="neptune-weight" type="number" min="1" value="150">
+          <button type="button">Calculate</button>
+          <div class="result-box">You would weigh 171.0 lbs on Neptune!</div>
+        </div>
+      </section>
+      <section class="panel feature-panel" data-feature="neptune">
+        <h2>Neptune Rotation Illustration</h2>
+        <p class="feature-note">The image rotation is a simple visual effect, not a time-scaled model of Neptune's real rotation.</p>
+        <p id="neptune-feature-status" aria-live="polite">Neptune rotates once in about 16 hours. Start a simple, non-time-scaled illustration.</p>
+        <button type="button" id="neptune-rotation-button" aria-pressed="false">Illustrate Neptune's rotation</button>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

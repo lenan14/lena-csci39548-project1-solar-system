@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercury</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="planet-page mercury-page">
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="brand">Mercury</div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="webdev-day1.html">Home</a>
+          <a href="sun.html">Sun</a>
+          <a href="moon.html">Moon</a>
+          <a href="earth.html">Earth</a>
+          <a href="mercury.html">Mercury</a>
+          <a href="venus.html">Venus</a>
+          <a href="mars.html">Mars</a>
+          <a href="jupiter.html">Jupiter</a>
+          <a href="saturn.html">Saturn</a>
+          <a href="uranus.html">Uranus</a>
+          <a href="neptune.html">Neptune</a>
+        </nav>
+      </header>
+
+      <main class="planet-hero">
+        <div class="planet-visual">
+          <img src="assests/mercury-removebg-preview.png" alt="Mercury illustration">
+        </div>
+
+        <div class="planet-copy">
+          <h1>Mercury</h1>
+          <p>
+            Mercury is the smallest planet and the closest to the Sun. It completes an orbit in just 88 Earth days, but its surface gets very hot in sunlight and very cold in darkness.
+          </p>
+          <div class="fact-grid">
+            <div class="fact-box">
+              <h3>Type</h3>
+              <p>Rocky planet</p>
+            </div>
+            <div class="fact-box">
+              <h3>Orbit</h3>
+              <p>88 days</p>
+            </div>
+            <div class="fact-box">
+              <h3>Fun Fact</h3>
+              <p>Closest to the Sun</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <section class="panel nasa-gallery-panel" aria-labelledby="nasa-gallery-title">
+        <div class="nasa-gallery-heading">
+          <p class="nasa-gallery-label">NASA IMAGE ARCHIVE</p>
+          <h2 id="nasa-gallery-title">What does Mercury actually look like in real life?</h2>
+        </div>
+        <div class="nasa-photo-grid">
+          <figure class="nasa-photo">
+            <img src="assests/nasa/mercury-global.jpg" alt="MESSENGER global view of Mercury, showing two views of its cratered surface." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">A global view of Mercury</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/PIA12051" target="_blank" rel="noopener noreferrer">NASA / MESSENGER — PIA12051</a>
+            </figcaption>
+          </figure>
+          <figure class="nasa-photo">
+            <img src="assests/nasa/mercury-caloris.jpg" alt="Enhanced-color MESSENGER view of Caloris Basin, a large impact basin on Mercury." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">Caloris Basin in enhanced color</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/PIA10359" target="_blank" rel="noopener noreferrer">NASA / MESSENGER — PIA10359</a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="info-grid">
+        <div class="panel">
+          <h2>Mercury's Surface</h2>
+          <p>
+            Mercury has almost no atmosphere to hold heat. Its surface is covered with craters and cliffs, and temperatures change sharply between day and night.
+          </p>
+          <ul>
+            <li>It is only slightly larger than Earth's Moon.</li>
+            <li>Its days are longer than its years.</li>
+            <li>Its surface has many craters from past impacts.</li>
+          </ul>
+          <a class="source-link" href="https://science.nasa.gov/mercury/facts/" target="_blank" rel="noopener noreferrer">Check these facts with NASA</a>
+        </div>
+
+        <div class="panel calc-box" data-gravity="0.38" data-planet="Mercury">
+          <h2>Weight on Mercury</h2>
+          <label for="mercury-weight">Your weight on Earth (lbs)</label>
+          <input id="mercury-weight" type="number" min="1" value="150">
+          <button type="button">Calculate</button>
+          <div class="result-box">You would weigh 57.0 lbs on Mercury!</div>
+        </div>
+      </section>
+      <section class="panel feature-panel" data-feature="mercury">
+        <h2>Mercury's Surface Temperature</h2>
+        <label for="mercury-temperature">Choose a surface temperature: <output id="mercury-temperature-value">167°C</output></label>
+        <input id="mercury-temperature" type="range" min="-180" max="430" value="167">
+        <p id="mercury-temperature-status" aria-live="polite">Move the slider to see how Mercury's surface temperature can change.</p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

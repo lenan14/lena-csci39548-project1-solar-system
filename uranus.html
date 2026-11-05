@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uranus</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="planet-page uranus-page">
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="brand">Uranus</div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="webdev-day1.html">Home</a>
+          <a href="sun.html">Sun</a>
+          <a href="moon.html">Moon</a>
+          <a href="earth.html">Earth</a>
+          <a href="mercury.html">Mercury</a>
+          <a href="venus.html">Venus</a>
+          <a href="mars.html">Mars</a>
+          <a href="jupiter.html">Jupiter</a>
+          <a href="saturn.html">Saturn</a>
+          <a href="uranus.html">Uranus</a>
+          <a href="neptune.html">Neptune</a>
+        </nav>
+      </header>
+
+      <main class="planet-hero">
+        <div class="planet-visual">
+          <img src="assests/uranus-removebg-preview.png" alt="Mint-green Uranus with turquoise bands and faint blue rings">
+        </div>
+
+        <div class="planet-copy">
+          <h1>Uranus</h1>
+          <p>
+            Uranus is a pale blue-green ice giant. Its axis is tilted about 98 degrees, so it travels around the Sun on its side.
+          </p>
+          <div class="fact-grid">
+            <div class="fact-box">
+              <h3>Type</h3>
+              <p>Ice giant</p>
+            </div>
+            <div class="fact-box">
+              <h3>Distance from Sun</h3>
+              <p>2.9 billion km</p>
+            </div>
+            <div class="fact-box">
+              <h3>Length of a Day</h3>
+              <p>17 hours 14 minutes</p>
+            </div>
+            <div class="fact-box">
+              <h3>Length of a Year</h3>
+              <p>84 Earth years</p>
+            </div>
+            <div class="fact-box">
+              <h3>Cloud-Top Temperature</h3>
+              <p>About -224&deg;C</p>
+            </div>
+            <div class="fact-box">
+              <h3>Known Moons</h3>
+              <p>28</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <section class="panel nasa-gallery-panel" aria-labelledby="nasa-gallery-title">
+        <div class="nasa-gallery-heading">
+          <p class="nasa-gallery-label">NASA IMAGE ARCHIVE</p>
+          <h2 id="nasa-gallery-title">What does Uranus actually look like in real life?</h2>
+        </div>
+        <div class="nasa-photo-grid">
+          <figure class="nasa-photo">
+            <img src="assests/nasa/uranus-voyager.jpg" alt="Voyager 2 comparison showing Uranus in true color and enhanced false color." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">Uranus in true and false color</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/PIA00032" target="_blank" rel="noopener noreferrer">NASA / JPL-Caltech — PIA00032</a>
+            </figcaption>
+          </figure>
+          <figure class="nasa-photo">
+            <img src="assests/nasa/uranus-rings.jpg" alt="Uranus's faint rings imaged by Voyager 2 as it passed near the ring plane." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">Uranus's rings from Voyager 2</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/PIA01984" target="_blank" rel="noopener noreferrer">NASA / Voyager 2 — PIA01984</a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="info-grid">
+        <div class="panel">
+          <h2>Uranus's Tilt</h2>
+          <p>
+            Uranus is the seventh planet from the Sun and is about 50,724 kilometers wide. Its tilt may be the result of a major collision long ago, and it leads to very long seasons.
+          </p>
+          <ul>
+            <li>Methane in its atmosphere absorbs red light, giving Uranus its blue-green color.</li>
+            <li>Uranus has faint rings and 28 known moons.</li>
+            <li>Because of its tilt, one pole can face the Sun for about 21 Earth years.</li>
+          </ul>
+          <a class="source-link" href="https://science.nasa.gov/uranus/facts/" target="_blank" rel="noopener noreferrer">Check these facts with NASA</a>
+        </div>
+
+        <div class="panel calc-box" data-gravity="0.89" data-planet="Uranus">
+          <h2>Weight on Uranus</h2>
+          <label for="uranus-weight">Your weight on Earth (lbs)</label>
+          <input id="uranus-weight" type="number" min="1" value="150">
+          <button type="button">Calculate</button>
+          <div class="result-box">You would weigh 133.5 lbs on Uranus!</div>
+        </div>
+      </section>
+      <section class="panel feature-panel" data-feature="uranus">
+        <h2>Explore Uranus's Extreme Seasons</h2>
+        <div class="feature-controls">
+          <button type="button" data-season="summer" aria-pressed="false">Long summer</button>
+          <button type="button" data-season="equinox" aria-pressed="false">Equinox</button>
+          <button type="button" data-season="winter" aria-pressed="false">Long winter</button>
+        </div>
+        <p id="uranus-season-status" aria-live="polite">Choose a season to see how Uranus's tilt affects its sunlight.</p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

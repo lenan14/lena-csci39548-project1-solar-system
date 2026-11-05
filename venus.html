@@ -1,18 +1,109 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venus</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  
-  <body>
-    <h1>Welcome to Venus!</h1>
+  <body class="planet-page venus-page">
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="brand">Venus</div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="webdev-day1.html">Home</a>
+          <a href="sun.html">Sun</a>
+          <a href="moon.html">Moon</a>
+          <a href="earth.html">Earth</a>
+          <a href="mercury.html">Mercury</a>
+          <a href="venus.html">Venus</a>
+          <a href="mars.html">Mars</a>
+          <a href="jupiter.html">Jupiter</a>
+          <a href="saturn.html">Saturn</a>
+          <a href="uranus.html">Uranus</a>
+          <a href="neptune.html">Neptune</a>
+        </nav>
+      </header>
 
-    <a href="webdev-day1.html">Go to the Solar System</a>
+      <main class="planet-hero">
+        <div class="planet-visual">
+          <img src="assests/venus-removebg-preview.png" alt="Venus illustration">
+        </div>
 
-	<button onclick="alert('Boom!');">
-		DO NOT PRESS
-	</button>
+        <div class="planet-copy">
+          <h1>Venus</h1>
+          <p>
+            Venus has thick clouds and is the hottest planet in the solar system. Its atmosphere traps heat, so the surface stays extremely hot.
+          </p>
+          <div class="fact-grid">
+            <div class="fact-box">
+              <h3>Type</h3>
+              <p>Rocky planet</p>
+            </div>
+            <div class="fact-box">
+              <h3>Temp</h3>
+              <p>About 467°C</p>
+            </div>
+            <div class="fact-box">
+              <h3>Fun Fact</h3>
+              <p>Rotates backward</p>
+            </div>
+          </div>
+        </div>
+      </main>
 
-</body>
+      <section class="panel nasa-gallery-panel" aria-labelledby="nasa-gallery-title">
+        <div class="nasa-gallery-heading">
+          <p class="nasa-gallery-label">NASA IMAGE ARCHIVE</p>
+          <h2 id="nasa-gallery-title">What does Venus actually look like in real life?</h2>
+        </div>
+        <div class="nasa-photo-grid">
+          <figure class="nasa-photo">
+            <img src="assests/nasa/venus-global.jpg" alt="Radar-based global view of Venus reconstructed from NASA Magellan surface measurements." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">Venus's surface mapped by radar</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/PIA00257" target="_blank" rel="noopener noreferrer">NASA / Magellan — PIA00257</a>
+            </figcaption>
+          </figure>
+          <figure class="nasa-photo">
+            <img src="assests/nasa/venus-alpha-regio.jpg" alt="Three-dimensional radar-based view of Venus's Alpha Regio surface made with Magellan data." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">Alpha Regio radar perspective</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/PIA00481" target="_blank" rel="noopener noreferrer">NASA / Magellan — PIA00481</a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="info-grid">
+        <div class="panel">
+          <h2>Venus's Surface</h2>
+          <p>
+            Venus can look bright in the evening sky. Its atmosphere is mostly carbon dioxide, and the pressure at the surface is about 93 times Earth's sea-level pressure.
+          </p>
+          <ul>
+            <li>Clouds are full of sulfuric acid.</li>
+            <li>The surface stays extremely hot both day and night.</li>
+            <li>It spins in the opposite direction from most planets.</li>
+          </ul>
+          <a class="source-link" href="https://science.nasa.gov/venus/venus-facts/" target="_blank" rel="noopener noreferrer">Check these facts with NASA</a>
+        </div>
+
+        <div class="panel calc-box" data-gravity="0.91" data-planet="Venus">
+          <h2>Weight on Venus</h2>
+          <label for="venus-weight">Your weight on Earth (lbs)</label>
+          <input id="venus-weight" type="number" min="1" value="150">
+          <button type="button">Calculate</button>
+          <div class="result-box">You would weigh 136.5 lbs on Venus!</div>
+        </div>
+      </section>
+      <section class="panel feature-panel" data-feature="venus">
+        <h2>Lift the Cloud Cover</h2>
+        <p id="venus-feature-status" aria-live="polite">Thick clouds cover Venus. Press the button to learn what lies below them.</p>
+        <button type="button" id="venus-cloud-button" aria-expanded="false">Reveal a surface fact</button>
+        <p id="venus-surface-fact" hidden>Volcanic plains and mountains cover much of Venus. The pressure at the surface is about 92 times Earth's sea-level pressure.</p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

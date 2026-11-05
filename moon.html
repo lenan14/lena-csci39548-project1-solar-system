@@ -1,18 +1,116 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Moon</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  
-  <body>
-    <h1>Welcome to the Moon!</h1>
+  <body class="planet-page moon-page">
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="brand">Moon</div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="webdev-day1.html">Home</a>
+          <a href="sun.html">Sun</a>
+          <a href="moon.html">Moon</a>
+          <a href="earth.html">Earth</a>
+          <a href="mercury.html">Mercury</a>
+          <a href="venus.html">Venus</a>
+          <a href="mars.html">Mars</a>
+          <a href="jupiter.html">Jupiter</a>
+          <a href="saturn.html">Saturn</a>
+          <a href="uranus.html">Uranus</a>
+          <a href="neptune.html">Neptune</a>
+        </nav>
+      </header>
 
-    <a href="webdev-day1.html">Go to the Solar System</a>
+      <main class="planet-hero">
+        <div class="planet-visual">
+          <div class="moon-illustration" data-phase="full-moon">
+            <img src="assests/moon-removebg-preview.png" alt="Illustration of the Moon with craters">
+            <span class="moon-shadow" aria-hidden="true"></span>
+          </div>
+        </div>
 
-	<button onclick="alert('Boom!');">
-		DO NOT PRESS
-	</button>
+        <div class="planet-copy">
+          <h1>The Moon</h1>
+          <p>
+            The Moon is Earth's natural satellite and the brightest object in our night sky. Its surface has craters, old lava plains, and mountains.
+          </p>
+          <div class="fact-grid">
+            <div class="fact-box">
+              <h3>Type</h3>
+              <p>Natural satellite</p>
+            </div>
+            <div class="fact-box">
+              <h3>Distance</h3>
+              <p>384,400 km</p>
+            </div>
+            <div class="fact-box">
+              <h3>Fun Fact</h3>
+              <p>Helps raise ocean tides</p>
+            </div>
+          </div>
+        </div>
+      </main>
 
-</body>
+      <section class="panel nasa-gallery-panel" aria-labelledby="nasa-gallery-title">
+        <div class="nasa-gallery-heading">
+          <p class="nasa-gallery-label">NASA IMAGE ARCHIVE</p>
+          <h2 id="nasa-gallery-title">What does the Moon actually look like in real life?</h2>
+        </div>
+        <div class="nasa-photo-grid">
+          <figure class="nasa-photo">
+            <img src="assests/nasa/moon-nearside.jpg" alt="Lunar Reconnaissance Orbiter mosaic of the Moon's near side, showing dark maria and bright highlands." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">The Moon's near side</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/PIA12235" target="_blank" rel="noopener noreferrer">NASA / GSFC / Arizona State University — PIA12235</a>
+            </figcaption>
+          </figure>
+          <figure class="nasa-photo">
+            <img src="assests/nasa/moon-apollo-surface.jpg" alt="Apollo 11 astronaut Edwin Aldrin standing on the lunar surface beside deployed experiment equipment." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">Apollo 11 on the lunar surface</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/as11-40-5874" target="_blank" rel="noopener noreferrer">NASA / Apollo 11 — AS11-40-5874</a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="info-grid">
+        <div class="panel">
+          <h2>The Moon's Surface</h2>
+          <p>
+            The Moon moves a little farther from Earth each year. As it orbits us, sunlight reaches different parts of its surface, which is why we see phases.
+          </p>
+          <ul>
+            <li>The Moon has almost no atmosphere, so sound cannot travel across its surface.</li>
+            <li>It can look bigger near the horizon, even though its size has not changed.</li>
+            <li>The Moon's gravity helps cause Earth's ocean tides.</li>
+          </ul>
+          <a class="source-link" href="https://science.nasa.gov/moon/facts/" target="_blank" rel="noopener noreferrer">Check these facts with NASA</a>
+        </div>
+
+        <div class="panel calc-box" data-gravity="0.17" data-planet="the Moon">
+          <h2>Weight on the Moon</h2>
+          <label for="moon-weight">Your weight on Earth (lbs)</label>
+          <input id="moon-weight" type="number" min="1" value="150">
+          <button type="button">Calculate</button>
+          <div class="result-box">You would weigh 25.5 lbs on the Moon!</div>
+        </div>
+      </section>
+      <section class="panel feature-panel" data-feature="moon">
+        <h2>Explore the Lunar Phases</h2>
+        <div class="feature-controls">
+          <button type="button" data-phase="New Moon" aria-pressed="false">New moon</button>
+          <button type="button" data-phase="First Quarter" aria-pressed="false">First quarter</button>
+          <button type="button" data-phase="Full Moon" aria-pressed="false">Full moon</button>
+        </div>
+        <p class="feature-note">The shadow is a simple illustration. Moon phases are caused by seeing different portions of the sunlit Moon, not by Earth's shadow.</p>
+        <p id="moon-phase-status" aria-live="polite">Pick a phase to see how much of the Moon's Earth-facing side is lit.</p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

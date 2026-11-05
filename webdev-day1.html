@@ -1,21 +1,160 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Solar System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Explorer</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  
   <body>
-    <h1>Welcome to the Solar System!</h1>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="brand">Solar System</div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="webdev-day1.html">Home</a>
+          <a href="sun.html">Sun</a>
+          <a href="moon.html">Moon</a>
+          <a href="earth.html">Earth</a>
+          <a href="mercury.html">Mercury</a>
+          <a href="venus.html">Venus</a>
+          <a href="mars.html">Mars</a>
+          <a href="jupiter.html">Jupiter</a>
+          <a href="saturn.html">Saturn</a>
+          <a href="uranus.html">Uranus</a>
+          <a href="neptune.html">Neptune</a>
+        </nav>
+      </header>
 
-    <a href="sun.html">Visit the Sun</a>
-    <a href="moon.html">Visit the Moon</a> 
-    <a href="earth.html">Visit the Earth</a>
-    <a href="venus.html">Visit Venus</a>
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <h1>Explore the Solar System</h1>
+            <p>
+              Our solar system is a fascinating place made up of the Sun, eight planets, their moons, and many smaller objects. Each planet has its own unique features and secrets to discover. Pick a planet below to learn more about it!
+            </p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#explore">Explore the planets</a>
+              <button class="secondary-btn" id="orbit-toggle" type="button" aria-pressed="false">Start the orbits</button>
+              <button class="secondary-btn" id="mission-log-open" type="button">Mission checklist</button>
+            </div>
+          </div>
 
-	<button onclick="alert('Boom!');">
-		DO NOT PRESS
-	</button>
+          <div class="orbit-wrap" aria-label="Solar system visual">
+            <div class="orbit">
+              <div class="planet-sun"></div>
+              <div class="planet-track mercury-track"><div class="planet-orb mercury-orb"></div></div>
+              <div class="planet-track venus-track"><div class="planet-orb venus-orb"></div></div>
+              <div class="planet-track earth-track"><div class="planet-orb earth-orb"></div></div>
+              <div class="planet-track mars-track"><div class="planet-orb mars-orb"></div></div>
+              <div class="planet-track jupiter-track"><div class="planet-orb jupiter-orb"></div></div>
+              <div class="planet-track saturn-track"><div class="planet-orb saturn-orb"></div></div>
+              <div class="planet-track uranus-track"><div class="planet-orb uranus-orb"></div></div>
+              <div class="planet-track neptune-track"><div class="planet-orb neptune-orb"></div></div>
+            </div>
+          </div>
+        </section>
 
-</body>
+        <h2 id="explore" class="section-title">Pick a World to Explore</h2>
+
+        <section class="planet-grid">
+          <article class="planet-card">
+            <img src="assests/mercury-removebg-preview.png" alt="Mercury">
+            <h3>Mercury</h3>
+            <p>The smallest planet and the closest one to the Sun.</p>
+            <a href="mercury.html">Visit Mercury</a>
+          </article>
+
+          <article class="planet-card">
+            <img src="assests/venus-removebg-preview.png" alt="Venus">
+            <h3>Venus</h3>
+            <p>A rocky planet with thick clouds and intense heat.</p>
+            <a href="venus.html">Visit Venus</a>
+          </article>
+
+          <article class="planet-card">
+            <img src="assests/earth-removebg-preview.png" alt="Earth">
+            <h3>Earth</h3>
+            <p>Our home, with oceans, land, and life.</p>
+            <a href="earth.html">Visit Earth</a>
+          </article>
+
+          <article class="planet-card">
+            <img src="assests/mars-removebg-preview.png" alt="Mars">
+            <h3>Mars</h3>
+            <p>A cold, rocky planet with huge canyons and dust storms.</p>
+            <a href="mars.html">Visit Mars</a>
+          </article>
+
+          <article class="planet-card">
+            <img src="assests/jupiter-removebg-preview.png" alt="Jupiter">
+            <h3>Jupiter</h3>
+            <p>The largest planet, known for its bands and giant storms.</p>
+            <a href="jupiter.html">Visit Jupiter</a>
+          </article>
+
+          <article class="planet-card">
+            <img src="assests/saturn-removebg-preview.png" alt="Saturn">
+            <h3>Saturn</h3>
+            <p>A gas giant with bright rings made of ice and rock.</p>
+            <a href="saturn.html">Visit Saturn</a>
+          </article>
+
+          <article class="planet-card">
+            <img src="assests/uranus-removebg-preview.png" alt="Uranus">
+            <h3>Uranus</h3>
+            <p>An icy planet that rotates on its side.</p>
+            <a href="uranus.html">Visit Uranus</a>
+          </article>
+
+          <article class="planet-card">
+            <img src="assests/neptune-removebg-preview.png" alt="Neptune">
+            <h3>Neptune <span class="bonus-label">Bonus</span></h3>
+            <p>A cold, blue planet with powerful winds.</p>
+            <a href="neptune.html">Visit Neptune</a>
+          </article>
+
+          <article class="planet-card">
+            <img src="assests/moon-removebg-preview.png" alt="Moon">
+            <h3>Moon</h3>
+            <p>Earth's natural satellite, with a surface full of craters.</p>
+            <a href="moon.html">Visit the Moon</a>
+          </article>
+
+          <article class="planet-card">
+            <img src="assests/sun-removebg-preview.png" alt="Sun">
+            <h3>Sun</h3>
+            <p>The star at the center of our solar system.</p>
+            <a href="sun.html">Visit the Sun</a>
+          </article>
+        </section>
+        <p class="orbit-status" id="orbit-status" aria-live="polite">Press the button to see the planets move!</p>
+      </main>
+    </div>
+    <dialog class="mission-dialog" id="mission-dialog" aria-labelledby="mission-dialog-title">
+      <div class="mission-dialog-header">
+        <div>
+          <p class="mission-eyebrow">MISSION PROGRESS</p>
+          <h2 id="mission-dialog-title">Places explored</h2>
+        </div>
+        <button class="mission-dialog-close" id="mission-log-close" type="button" aria-label="Close mission checklist">&times;</button>
+      </div>
+      <p class="mission-progress" id="mission-progress" aria-live="polite"></p>
+      <p class="mission-help">Pages you visit are checked off. Progress resets when you close this tab.</p>
+      <ul class="mission-list">
+        <li data-mission-page="webdev-day1.html"><a href="webdev-day1.html">Home</a><span></span></li>
+        <li data-mission-page="sun.html"><a href="sun.html">Sun</a><span></span></li>
+        <li data-mission-page="moon.html"><a href="moon.html">Moon</a><span></span></li>
+        <li data-mission-page="earth.html"><a href="earth.html">Earth</a><span></span></li>
+        <li data-mission-page="mercury.html"><a href="mercury.html">Mercury</a><span></span></li>
+        <li data-mission-page="venus.html"><a href="venus.html">Venus</a><span></span></li>
+        <li data-mission-page="mars.html"><a href="mars.html">Mars</a><span></span></li>
+        <li data-mission-page="jupiter.html"><a href="jupiter.html">Jupiter</a><span></span></li>
+        <li data-mission-page="saturn.html"><a href="saturn.html">Saturn</a><span></span></li>
+        <li data-mission-page="uranus.html"><a href="uranus.html">Uranus</a><span></span></li>
+        <li data-mission-page="neptune.html"><a href="neptune.html">Neptune</a><span></span></li>
+      </ul>
+      <p class="mission-storage-note" id="mission-storage-note" hidden>Progress could not be saved in this browser.</p>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
 </html>

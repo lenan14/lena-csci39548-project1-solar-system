@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saturn</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="planet-page saturn-page">
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="brand">Saturn</div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="webdev-day1.html">Home</a>
+          <a href="sun.html">Sun</a>
+          <a href="moon.html">Moon</a>
+          <a href="earth.html">Earth</a>
+          <a href="mercury.html">Mercury</a>
+          <a href="venus.html">Venus</a>
+          <a href="mars.html">Mars</a>
+          <a href="jupiter.html">Jupiter</a>
+          <a href="saturn.html">Saturn</a>
+          <a href="uranus.html">Uranus</a>
+          <a href="neptune.html">Neptune</a>
+        </nav>
+      </header>
+
+      <main class="planet-hero">
+        <div class="planet-visual">
+          <img src="assests/saturn-removebg-preview.png" alt="Saturn illustration">
+        </div>
+
+        <div class="planet-copy">
+          <h1>Saturn</h1>
+          <p>
+            Saturn is known for its rings, which are made mostly of ice and rock. It is a gas giant made mainly of hydrogen and helium.
+          </p>
+          <div class="fact-grid">
+            <div class="fact-box">
+              <h3>Type</h3>
+              <p>Gas giant</p>
+            </div>
+            <div class="fact-box">
+              <h3>Rings</h3>
+              <p>Wide and bright</p>
+            </div>
+            <div class="fact-box">
+              <h3>Fun Fact</h3>
+              <p>Very low density</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <section class="panel nasa-gallery-panel" aria-labelledby="nasa-gallery-title">
+        <div class="nasa-gallery-heading">
+          <p class="nasa-gallery-label">NASA IMAGE ARCHIVE</p>
+          <h2 id="nasa-gallery-title">What does Saturn actually look like in real life?</h2>
+        </div>
+        <div class="nasa-photo-grid">
+          <figure class="nasa-photo">
+            <img src="assests/nasa/saturn-cassini.jpg" alt="Saturn and its rings seen by the Cassini spacecraft, with the planet's shadow crossing the rings." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">Saturn and its rings from Cassini</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/PIA17172" target="_blank" rel="noopener noreferrer">NASA / JPL-Caltech / SSI — PIA17172</a>
+            </figcaption>
+          </figure>
+          <figure class="nasa-photo">
+            <img src="assests/nasa/saturn-ring-details.jpg" alt="Close-up view of Saturn's rings revealing multiple narrow ringlets." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">Details in Saturn's rings</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/PIA20506" target="_blank" rel="noopener noreferrer">NASA / JPL-Caltech / SSI — PIA20506</a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="info-grid">
+        <div class="panel">
+          <h2>About Saturn</h2>
+          <p>
+            Saturn's rings are made of many small pieces of ice and rock orbiting the planet. The rings are wide but very thin, and Saturn itself has a low density.
+          </p>
+          <ul>
+            <li>Its rings are incredibly wide but very thin.</li>
+            <li>NASA lists 274 confirmed moons as of March 2025, including Titan.</li>
+            <li>Saturn is less dense than water, though there is no ocean large enough to hold it.</li>
+          </ul>
+          <a class="source-link" href="https://science.nasa.gov/saturn/facts/" target="_blank" rel="noopener noreferrer">Check these facts with NASA</a>
+        </div>
+
+        <div class="panel calc-box" data-gravity="1.07" data-planet="Saturn">
+          <h2>Weight on Saturn</h2>
+          <label for="saturn-weight">Your weight on Earth (lbs)</label>
+          <input id="saturn-weight" type="number" min="1" value="150">
+          <button type="button">Calculate</button>
+          <div class="result-box">You would weigh 160.5 lbs on Saturn!</div>
+        </div>
+      </section>
+      <section class="panel feature-panel" data-feature="saturn">
+        <h2>Explore Saturn's Rings</h2>
+        <div class="feature-controls">
+          <button type="button" data-ring-view="materials" aria-pressed="false">What are they made of?</button>
+          <button type="button" data-ring-view="division" aria-pressed="false">Cassini Division</button>
+          <button type="button" data-ring-view="thickness" aria-pressed="false">How thin are they?</button>
+        </div>
+        <p id="saturn-ring-status" aria-live="polite">Choose a topic to learn a fact about Saturn's rings.</p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

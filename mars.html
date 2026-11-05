@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="planet-page mars-page">
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="brand">Mars</div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="webdev-day1.html">Home</a>
+          <a href="sun.html">Sun</a>
+          <a href="moon.html">Moon</a>
+          <a href="earth.html">Earth</a>
+          <a href="mercury.html">Mercury</a>
+          <a href="venus.html">Venus</a>
+          <a href="mars.html">Mars</a>
+          <a href="jupiter.html">Jupiter</a>
+          <a href="saturn.html">Saturn</a>
+          <a href="uranus.html">Uranus</a>
+          <a href="neptune.html">Neptune</a>
+        </nav>
+      </header>
+
+      <main class="planet-hero">
+        <div class="planet-visual">
+          <img src="assests/mars-removebg-preview.png" alt="Mars illustration">
+        </div>
+
+        <div class="planet-copy">
+          <h1>Mars</h1>
+          <p>
+            Mars is called the Red Planet because iron-rich dust gives its surface a rusty color. It has huge volcanoes and canyons, and there is evidence that water once flowed there.
+          </p>
+          <div class="fact-grid">
+            <div class="fact-box">
+              <h3>Type</h3>
+              <p>Rocky planet</p>
+            </div>
+            <div class="fact-box">
+              <h3>Weather</h3>
+              <p>Dust storms</p>
+            </div>
+            <div class="fact-box">
+              <h3>Fun Fact</h3>
+              <p>Home to Olympus Mons</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <section class="panel nasa-gallery-panel" aria-labelledby="nasa-gallery-title">
+        <div class="nasa-gallery-heading">
+          <p class="nasa-gallery-label">NASA IMAGE ARCHIVE</p>
+          <h2 id="nasa-gallery-title">What does Mars actually look like in real life?</h2>
+        </div>
+        <div class="nasa-photo-grid">
+          <figure class="nasa-photo">
+            <img src="assests/nasa/mars-global.jpg" alt="Two global views of Mars showing its rust-colored surface and major features." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">Global views of Mars</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/PIA03755" target="_blank" rel="noopener noreferrer">NASA / JPL-Caltech — PIA03755</a>
+            </figcaption>
+          </figure>
+          <figure class="nasa-photo">
+            <img src="assests/nasa/mars-olympus-rupes.jpg" alt="NASA Mars Odyssey view of Olympus Rupes, the steep escarpment around Olympus Mons." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">The escarpment around Olympus Mons</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/PIA15443" target="_blank" rel="noopener noreferrer">NASA / JPL-Caltech / ASU — PIA15443</a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="info-grid">
+        <div class="panel">
+          <h2>About Mars</h2>
+          <p>
+            Mars has frozen water and a surface that scientists can study for clues about its past. Researchers are also looking for signs that life may once have existed there.
+          </p>
+          <ul>
+            <li>Olympus Mons is the tallest volcano in the solar system.</li>
+            <li>Polar ice caps grow and shrink with the seasons.</li>
+            <li>Its red color comes from iron oxide, or rust.</li>
+          </ul>
+          <a class="source-link" href="https://science.nasa.gov/mars/facts/" target="_blank" rel="noopener noreferrer">Check these facts with NASA</a>
+        </div>
+
+        <!-- The shared calculator uses these data values to calculate Mars weight. -->
+        <div class="panel calc-box" data-gravity="0.38" data-planet="Mars">
+          <h2>Weight on Mars</h2>
+          <label for="mars-weight">Your weight on Earth (lbs)</label>
+          <input id="mars-weight" type="number" min="1" value="150">
+          <button type="button">Calculate</button>
+          <div class="result-box">You would weigh 57.0 lbs on Mars!</div>
+        </div>
+      </section>
+      <section class="panel feature-panel" data-feature="mars">
+        <h2>Explore Mars Features</h2>
+        <div class="feature-controls">
+          <button type="button" data-route="crater" aria-pressed="false">Explore a crater</button>
+          <button type="button" data-route="volcano" aria-pressed="false">Olympus Mons</button>
+          <button type="button" data-route="ice" aria-pressed="false">Polar ice</button>
+        </div>
+        <p id="mars-route-status" aria-live="polite">Choose a feature to learn a real fact about Mars.</p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

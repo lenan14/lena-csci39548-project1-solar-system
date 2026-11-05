@@ -1,18 +1,110 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Sun</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  
-  <body>
-    <h1>Welcome to the Sun!</h1>
+  <body class="planet-page sun-page">
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="brand">Sun</div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="webdev-day1.html">Home</a>
+          <a href="sun.html">Sun</a>
+          <a href="moon.html">Moon</a>
+          <a href="earth.html">Earth</a>
+          <a href="mercury.html">Mercury</a>
+          <a href="venus.html">Venus</a>
+          <a href="mars.html">Mars</a>
+          <a href="jupiter.html">Jupiter</a>
+          <a href="saturn.html">Saturn</a>
+          <a href="uranus.html">Uranus</a>
+          <a href="neptune.html">Neptune</a>
+        </nav>
+      </header>
 
-    <a href="webdev-day1.html">Go to the Solar System</a>
+      <main class="planet-hero">
+        <div class="planet-visual">
+          <img src="assests/sun-removebg-preview.png" alt="Sun illustration">
+        </div>
 
-	<button onclick="alert('Boom!');">
-		DO NOT PRESS
-	</button>
+        <div class="planet-copy">
+          <h1>The Sun</h1>
+          <p>
+            The Sun is a star at the center of our solar system. It gives Earth light and heat, and it is made mostly of hydrogen and helium.
+          </p>
+          <div class="fact-grid">
+            <div class="fact-box">
+              <h3>Type</h3>
+              <p>Star</p>
+            </div>
+            <div class="fact-box">
+              <h3>Temperature</h3>
+              <p>~5,500°C</p>
+            </div>
+            <div class="fact-box">
+              <h3>Fun Fact</h3>
+              <p>It powers life</p>
+            </div>
+          </div>
+        </div>
+      </main>
 
-</body>
+      <section class="panel nasa-gallery-panel" aria-labelledby="nasa-gallery-title">
+        <div class="nasa-gallery-heading">
+          <p class="nasa-gallery-label">NASA IMAGE ARCHIVE</p>
+          <h2 id="nasa-gallery-title">What does the Sun actually look like in real life?</h2>
+        </div>
+        <div class="nasa-photo-grid">
+          <figure class="nasa-photo">
+            <img src="assests/nasa/sun-sdo.jpg" alt="Full-disk view of the Sun captured by NASA's Solar Dynamics Observatory." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">The Sun from Solar Dynamics Observatory</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/PIA26681" target="_blank" rel="noopener noreferrer">NASA / GSFC / SDO — PIA26681</a>
+            </figcaption>
+          </figure>
+          <figure class="nasa-photo">
+            <img src="assests/nasa/sun-flare.jpg" alt="NASA Solar Dynamics Observatory view of the Sun during a C3-class solar flare." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">The Sun during a solar flare</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/GSFC_20171208_Archive_e001978" target="_blank" rel="noopener noreferrer">NASA / GSFC / SDO</a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="info-grid">
+        <div class="panel">
+          <h2>What Makes the Sun Glow?</h2>
+          <p>
+            Deep inside the Sun, hydrogen atoms combine to form helium. This releases energy that eventually reaches us as sunlight.
+          </p>
+          <ul>
+            <li>The Sun holds more than 99% of the solar system's mass.</li>
+            <li>Its gravity keeps all planets in orbit.</li>
+            <li>Its light helps warm Earth and support plant growth.</li>
+            <li>The visible layer is called the photosphere; the Sun has no solid surface.</li>
+          </ul>
+          <a class="source-link" href="https://science.nasa.gov/sun/facts/" target="_blank" rel="noopener noreferrer">Check these facts with NASA</a>
+        </div>
+
+        <div class="panel calc-box" data-gravity="27.9" data-planet="the Sun">
+          <h2>Weight near the Sun</h2>
+          <label for="sun-weight">Your Earth weight (lbs)</label>
+          <input id="sun-weight" type="number" min="1" value="150">
+          <button type="button">Calculate</button>
+          <div class="result-box">You would weigh 4185.0 lbs on the Sun!</div>
+        </div>
+      </section>
+      <section class="panel feature-panel" data-feature="sun">
+        <h2>Solar Flare Illustration</h2>
+        <p class="feature-note">This is a visual effect, not a live solar flare alert or live NASA data.</p>
+        <p id="sun-feature-status" aria-live="polite">Solar flares are eruptions of energy from the Sun. Press the button for a visual illustration.</p>
+        <button type="button" id="sun-flare-button" aria-pressed="false">Show flare illustration</button>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

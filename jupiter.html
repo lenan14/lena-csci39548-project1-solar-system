@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="planet-page jupiter-page">
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="brand">Jupiter</div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="webdev-day1.html">Home</a>
+          <a href="sun.html">Sun</a>
+          <a href="moon.html">Moon</a>
+          <a href="earth.html">Earth</a>
+          <a href="mercury.html">Mercury</a>
+          <a href="venus.html">Venus</a>
+          <a href="mars.html">Mars</a>
+          <a href="jupiter.html">Jupiter</a>
+          <a href="saturn.html">Saturn</a>
+          <a href="uranus.html">Uranus</a>
+          <a href="neptune.html">Neptune</a>
+        </nav>
+      </header>
+
+      <main class="planet-hero">
+        <div class="planet-visual">
+          <img src="assests/jupiter-removebg-preview.png" alt="Jupiter illustration">
+        </div>
+
+        <div class="planet-copy">
+          <h1>Jupiter</h1>
+          <p>
+            Jupiter is the largest planet in the solar system. Its bands are clouds at different heights, and the Great Red Spot is a huge storm.
+          </p>
+          <div class="fact-grid">
+            <div class="fact-box">
+              <h3>Type</h3>
+              <p>Gas giant</p>
+            </div>
+            <div class="fact-box">
+              <h3>Storm</h3>
+              <p>Great Red Spot</p>
+            </div>
+            <div class="fact-box">
+              <h3>Fun Fact</h3>
+              <p>Massive magnetic field</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <section class="panel nasa-gallery-panel" aria-labelledby="nasa-gallery-title">
+        <div class="nasa-gallery-heading">
+          <p class="nasa-gallery-label">NASA IMAGE ARCHIVE</p>
+          <h2 id="nasa-gallery-title">What does Jupiter actually look like in real life?</h2>
+        </div>
+        <div class="nasa-photo-grid">
+          <figure class="nasa-photo">
+            <img src="assests/nasa/jupiter-voyager.jpg" alt="Jupiter seen by Voyager 2, showing the planet's cloudy atmosphere." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">Jupiter from Voyager 2</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/PIA01369" target="_blank" rel="noopener noreferrer">NASA / Voyager 2 — PIA01369</a>
+            </figcaption>
+          </figure>
+          <figure class="nasa-photo">
+            <img src="assests/nasa/jupiter-great-red-spot.jpg" alt="Jupiter's Great Red Spot, a large storm in the planet's atmosphere." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">The Great Red Spot</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/PIA01370" target="_blank" rel="noopener noreferrer">NASA / Voyager — PIA01370</a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="info-grid">
+        <div class="panel">
+          <h2>About Jupiter</h2>
+          <p>
+            More than 1,300 Earths could fit inside Jupiter. It is made mostly of hydrogen and helium, and its strong magnetic field produces bright auroras.
+          </p>
+          <ul>
+            <li>NASA currently lists 115 known moons; discoveries and official counts can change.</li>
+            <li>The Great Red Spot has been raging for centuries.</li>
+            <li>Its gravity can change the paths of asteroids and comets.</li>
+          </ul>
+          <a class="source-link" href="https://science.nasa.gov/jupiter/jupiter-facts/" target="_blank" rel="noopener noreferrer">Check these facts with NASA</a>
+        </div>
+
+        <div class="panel calc-box" data-gravity="2.53" data-planet="Jupiter">
+          <h2>Weight on Jupiter</h2>
+          <label for="jupiter-weight">Your weight on Earth (lbs)</label>
+          <input id="jupiter-weight" type="number" min="1" value="150">
+          <button type="button">Calculate</button>
+          <div class="result-box">You would weigh 379.5 lbs on Jupiter!</div>
+        </div>
+      </section>
+      <section class="panel feature-panel" data-feature="jupiter">
+        <h2>Jupiter Rotation Illustration</h2>
+        <p class="feature-note">The animation rotates the planet illustration; it is not a simulation of the Great Red Spot or a time-scaled model.</p>
+        <p id="jupiter-feature-status" aria-live="polite">Jupiter rotates once in about 9.9 hours. Start a simple, non-time-scaled rotation illustration.</p>
+        <button type="button" id="jupiter-storm-button" aria-pressed="false">Illustrate Jupiter's rotation</button>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

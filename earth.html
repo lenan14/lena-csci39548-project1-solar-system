@@ -1,18 +1,111 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Earth</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  
-  <body>
-    <h1>Welcome to the Earth!</h1>
+  <body class="planet-page earth-page">
+    <span class="earth-land-patch earth-land-patch-three" aria-hidden="true"></span>
+    <span class="earth-land-patch earth-land-patch-four" aria-hidden="true"></span>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="brand">Earth</div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="webdev-day1.html">Home</a>
+          <a href="sun.html">Sun</a>
+          <a href="moon.html">Moon</a>
+          <a href="earth.html">Earth</a>
+          <a href="mercury.html">Mercury</a>
+          <a href="venus.html">Venus</a>
+          <a href="mars.html">Mars</a>
+          <a href="jupiter.html">Jupiter</a>
+          <a href="saturn.html">Saturn</a>
+          <a href="uranus.html">Uranus</a>
+          <a href="neptune.html">Neptune</a>
+        </nav>
+      </header>
 
-    <a href="webdev-day1.html">Go to the Solar System</a>
+      <main class="planet-hero">
+        <div class="planet-visual">
+          <img src="assests/earth-removebg-preview.png" alt="Earth illustration">
+        </div>
 
-	<button onclick="alert('Boom!');">
-		DO NOT PRESS
-	</button>
+        <div class="planet-copy">
+          <h1>Earth</h1>
+          <p>
+            Earth is our home and the only planet we know of with life on its surface. Its oceans cover most of the planet, and its atmosphere helps keep conditions suitable for life.
+          </p>
+          <div class="fact-grid">
+            <div class="fact-box">
+              <h3>Type</h3>
+              <p>Rocky planet</p>
+            </div>
+            <div class="fact-box">
+              <h3>Distance</h3>
+              <p>149.6 million km</p>
+            </div>
+            <div class="fact-box">
+              <h3>Fun Fact</h3>
+              <p>71% water</p>
+            </div>
+          </div>
+        </div>
+      </main>
 
-</body>
+      <section class="panel nasa-gallery-panel" aria-labelledby="nasa-gallery-title">
+        <div class="nasa-gallery-heading">
+          <p class="nasa-gallery-label">NASA IMAGE ARCHIVE</p>
+          <h2 id="nasa-gallery-title">What does Earth actually look like in real life?</h2>
+        </div>
+        <div class="nasa-photo-grid">
+          <figure class="nasa-photo">
+            <img src="assests/nasa/earth-earthrise.jpg" alt="Earth rising above the Moon's horizon in an image captured by the Lunar Reconnaissance Orbiter." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">Earthrise seen from lunar orbit</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/GSFC_20171208_Archive_e000496" target="_blank" rel="noopener noreferrer">NASA / Goddard / Arizona State University</a>
+            </figcaption>
+          </figure>
+          <figure class="nasa-photo">
+            <img src="assests/nasa/earth-blue-marble.jpg" alt="NASA Blue Marble view of Earth's western hemisphere, showing clouds, continents, and oceans." loading="lazy">
+            <figcaption>
+              <span class="nasa-photo-title">Blue Marble: western hemisphere</span>
+              <a class="nasa-photo-credit" href="https://images.nasa.gov/details/GSFC_20171208_Archive_e002131" target="_blank" rel="noopener noreferrer">NASA / Goddard — Blue Marble 2007</a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="info-grid">
+        <div class="panel">
+          <h2>About Earth</h2>
+          <p>
+            Earth is at a distance from the Sun where liquid water can exist. Its atmosphere helps keep the planet warm and protects the surface from some harmful radiation.
+          </p>
+          <ul>
+            <li>Our Moon's gravity helps move the ocean tides.</li>
+            <li>Earth's magnetic field helps shield us from particles from the Sun.</li>
+            <li>Our planet has seasons because of its tilted axis.</li>
+          </ul>
+          <a class="source-link" href="https://science.nasa.gov/earth/facts/" target="_blank" rel="noopener noreferrer">Check these facts with NASA</a>
+        </div>
+
+        <div class="panel calc-box" data-gravity="1" data-planet="Earth">
+          <h2>Weight on Earth</h2>
+          <label for="earth-weight">Your weight on Earth (lbs)</label>
+          <input id="earth-weight" type="number" min="1" value="150">
+          <button type="button">Calculate</button>
+          <div class="result-box">You would weigh 150.0 lbs on Earth!</div>
+        </div>
+      </section>
+      <section class="panel feature-panel" data-feature="earth">
+        <h2>Day and Night</h2>
+        <p class="feature-note">The button applies a simple lighting effect to the illustration; it is not a live day-night map.</p>
+        <p id="earth-feature-status" aria-live="polite">Earth turns once about every 24 hours. Use the button to switch the illustration.</p>
+        <button type="button" id="earth-day-button" aria-pressed="false">Show Earth's night side</button>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
