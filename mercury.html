@@ -8,6 +8,7 @@
   </head>
   <body class="planet-page mercury-page">
     <div class="site-shell">
+      <!-- Shared navigation keeps movement between the planet pages consistent. -->
       <header class="topbar">
         <div class="brand">Mercury</div>
         <nav class="nav-links" aria-label="Main navigation">
@@ -25,6 +26,7 @@
         </nav>
       </header>
 
+      <!-- Hero combines the planet illustration, summary, and quick facts. -->
       <main class="planet-hero">
         <div class="planet-visual">
           <img src="assests/mercury-removebg-preview.png" alt="Mercury illustration">
@@ -52,6 +54,7 @@
         </div>
       </main>
 
+      <!-- NASA archive photos include descriptive text and source credits. -->
       <section class="panel nasa-gallery-panel" aria-labelledby="nasa-gallery-title">
         <div class="nasa-gallery-heading">
           <p class="nasa-gallery-label">NASA IMAGE ARCHIVE</p>
@@ -75,6 +78,7 @@
         </div>
       </section>
 
+      <!-- Reference facts sit beside the calculator, configured with Mercury gravity. -->
       <section class="info-grid">
         <div class="panel">
           <h2>Mercury's Surface</h2>
@@ -97,6 +101,7 @@
           <div class="result-box">You would weigh 57.0 lbs on Mercury!</div>
         </div>
       </section>
+      <!-- The range input demonstrates the planet's changing surface temperature. -->
       <section class="panel feature-panel" data-feature="mercury">
         <h2>Mercury's Surface Temperature</h2>
         <label for="mercury-temperature">Choose a surface temperature: <output id="mercury-temperature-value">167°C</output></label>
@@ -104,6 +109,7 @@
         <p id="mercury-temperature-status" aria-live="polite">Move the slider to see how Mercury's surface temperature can change.</p>
       </section>
     </div>
+    <!-- Shared vanilla JavaScript initializes the calculator and page interaction. -->
     <script src="script.js"></script>
   </body>
 </html>

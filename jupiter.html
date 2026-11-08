@@ -8,6 +8,7 @@
   </head>
   <body class="planet-page jupiter-page">
     <div class="site-shell">
+      <!-- Shared navigation keeps movement between the planet pages consistent. -->
       <header class="topbar">
         <div class="brand">Jupiter</div>
         <nav class="nav-links" aria-label="Main navigation">
@@ -25,6 +26,7 @@
         </nav>
       </header>
 
+      <!-- Hero combines the planet illustration, summary, and quick facts. -->
       <main class="planet-hero">
         <div class="planet-visual">
           <img src="assests/jupiter-removebg-preview.png" alt="Jupiter illustration">
@@ -52,6 +54,7 @@
         </div>
       </main>
 
+      <!-- NASA archive photos include descriptive text and source credits. -->
       <section class="panel nasa-gallery-panel" aria-labelledby="nasa-gallery-title">
         <div class="nasa-gallery-heading">
           <p class="nasa-gallery-label">NASA IMAGE ARCHIVE</p>
@@ -75,6 +78,7 @@
         </div>
       </section>
 
+      <!-- Reference facts sit beside the calculator, configured with Jupiter gravity. -->
       <section class="info-grid">
         <div class="panel">
           <h2>About Jupiter</h2>
@@ -97,6 +101,7 @@
           <div class="result-box">You would weigh 379.5 lbs on Jupiter!</div>
         </div>
       </section>
+      <!-- The button controls a clearly labeled illustration of planetary rotation. -->
       <section class="panel feature-panel" data-feature="jupiter">
         <h2>Jupiter Rotation Illustration</h2>
         <p class="feature-note">The animation rotates the planet illustration; it is not a simulation of the Great Red Spot or a time-scaled model.</p>
@@ -104,6 +109,7 @@
         <button type="button" id="jupiter-storm-button" aria-pressed="false">Illustrate Jupiter's rotation</button>
       </section>
     </div>
+    <!-- Shared vanilla JavaScript initializes the calculator and page interaction. -->
     <script src="script.js"></script>
   </body>
 </html>

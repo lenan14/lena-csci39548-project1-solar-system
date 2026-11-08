@@ -10,6 +10,7 @@
     <span class="earth-land-patch earth-land-patch-three" aria-hidden="true"></span>
     <span class="earth-land-patch earth-land-patch-four" aria-hidden="true"></span>
     <div class="site-shell">
+      <!-- Shared navigation keeps movement between the planet pages consistent. -->
       <header class="topbar">
         <div class="brand">Earth</div>
         <nav class="nav-links" aria-label="Main navigation">
@@ -27,6 +28,7 @@
         </nav>
       </header>
 
+      <!-- Hero combines the planet illustration, summary, and quick facts. -->
       <main class="planet-hero">
         <div class="planet-visual">
           <img src="assests/earth-removebg-preview.png" alt="Earth illustration">
@@ -54,6 +56,7 @@
         </div>
       </main>
 
+      <!-- NASA archive photos include descriptive text and source credits. -->
       <section class="panel nasa-gallery-panel" aria-labelledby="nasa-gallery-title">
         <div class="nasa-gallery-heading">
           <p class="nasa-gallery-label">NASA IMAGE ARCHIVE</p>
@@ -77,6 +80,7 @@
         </div>
       </section>
 
+      <!-- Reference facts sit beside the calculator, configured with Earth gravity. -->
       <section class="info-grid">
         <div class="panel">
           <h2>About Earth</h2>
@@ -99,6 +103,7 @@
           <div class="result-box">You would weigh 150.0 lbs on Earth!</div>
         </div>
       </section>
+      <!-- This page-specific control applies a simple day/night image effect. -->
       <section class="panel feature-panel" data-feature="earth">
         <h2>Day and Night</h2>
         <p class="feature-note">The button applies a simple lighting effect to the illustration; it is not a live day-night map.</p>
@@ -106,6 +111,7 @@
         <button type="button" id="earth-day-button" aria-pressed="false">Show Earth's night side</button>
       </section>
     </div>
+    <!-- Shared vanilla JavaScript initializes the calculator and page interaction. -->
     <script src="script.js"></script>
   </body>
 </html>

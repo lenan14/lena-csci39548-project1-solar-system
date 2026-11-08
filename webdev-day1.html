@@ -8,6 +8,7 @@
   </head>
   <body>
     <div class="site-shell">
+      <!-- Shared navigation connects the home page to every destination. -->
       <header class="topbar">
         <div class="brand">Solar System</div>
         <nav class="nav-links" aria-label="Main navigation">
@@ -25,6 +26,7 @@
         </nav>
       </header>
 
+      <!-- Introductory orbit illustration and controls for the home page. -->
       <main>
         <section class="hero">
           <div class="hero-copy">
@@ -56,6 +58,7 @@
 
         <h2 id="explore" class="section-title">Pick a World to Explore</h2>
 
+        <!-- Destination cards link to the individual solar-system pages. -->
         <section class="planet-grid">
           <article class="planet-card">
             <img src="assests/mercury-removebg-preview.png" alt="Mercury">
@@ -130,6 +133,7 @@
         <p class="orbit-status" id="orbit-status" aria-live="polite">Press the button to see the planets move!</p>
       </main>
     </div>
+    <!-- The checklist tracks pages visited during this browser tab's session. -->
     <dialog class="mission-dialog" id="mission-dialog" aria-labelledby="mission-dialog-title">
       <div class="mission-dialog-header">
         <div>
@@ -155,6 +159,7 @@
       </ul>
       <p class="mission-storage-note" id="mission-storage-note" hidden>Progress could not be saved in this browser.</p>
     </dialog>
+    <!-- All page interactions are handled by the shared, dependency-free script. -->
     <script src="script.js"></script>
   </body>
 </html>

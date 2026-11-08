@@ -8,6 +8,7 @@
   </head>
   <body class="planet-page venus-page">
     <div class="site-shell">
+      <!-- Shared navigation keeps movement between the planet pages consistent. -->
       <header class="topbar">
         <div class="brand">Venus</div>
         <nav class="nav-links" aria-label="Main navigation">
@@ -25,6 +26,7 @@
         </nav>
       </header>
 
+      <!-- Hero combines the planet illustration, summary, and quick facts. -->
       <main class="planet-hero">
         <div class="planet-visual">
           <img src="assests/venus-removebg-preview.png" alt="Venus illustration">
@@ -52,6 +54,7 @@
         </div>
       </main>
 
+      <!-- NASA archive photos include descriptive text and source credits. -->
       <section class="panel nasa-gallery-panel" aria-labelledby="nasa-gallery-title">
         <div class="nasa-gallery-heading">
           <p class="nasa-gallery-label">NASA IMAGE ARCHIVE</p>
@@ -75,6 +78,7 @@
         </div>
       </section>
 
+      <!-- Reference facts sit beside the calculator, configured with Venus gravity. -->
       <section class="info-grid">
         <div class="panel">
           <h2>Venus's Surface</h2>
@@ -97,6 +101,7 @@
           <div class="result-box">You would weigh 136.5 lbs on Venus!</div>
         </div>
       </section>
+      <!-- The button reveals a surface fact hidden beneath the cloud cover. -->
       <section class="panel feature-panel" data-feature="venus">
         <h2>Lift the Cloud Cover</h2>
         <p id="venus-feature-status" aria-live="polite">Thick clouds cover Venus. Press the button to learn what lies below them.</p>
@@ -104,6 +109,7 @@
         <p id="venus-surface-fact" hidden>Volcanic plains and mountains cover much of Venus. The pressure at the surface is about 92 times Earth's sea-level pressure.</p>
       </section>
     </div>
+    <!-- Shared vanilla JavaScript initializes the calculator and page interaction. -->
     <script src="script.js"></script>
   </body>
 </html>

@@ -8,6 +8,7 @@
   </head>
   <body class="planet-page mars-page">
     <div class="site-shell">
+      <!-- Shared navigation keeps movement between the planet pages consistent. -->
       <header class="topbar">
         <div class="brand">Mars</div>
         <nav class="nav-links" aria-label="Main navigation">
@@ -25,6 +26,7 @@
         </nav>
       </header>
 
+      <!-- Hero combines the planet illustration, summary, and quick facts. -->
       <main class="planet-hero">
         <div class="planet-visual">
           <img src="assests/mars-removebg-preview.png" alt="Mars illustration">
@@ -52,6 +54,7 @@
         </div>
       </main>
 
+      <!-- NASA archive photos include descriptive text and source credits. -->
       <section class="panel nasa-gallery-panel" aria-labelledby="nasa-gallery-title">
         <div class="nasa-gallery-heading">
           <p class="nasa-gallery-label">NASA IMAGE ARCHIVE</p>
@@ -75,6 +78,7 @@
         </div>
       </section>
 
+      <!-- Reference facts sit beside the calculator, configured with Mars gravity. -->
       <section class="info-grid">
         <div class="panel">
           <h2>About Mars</h2>
@@ -89,7 +93,6 @@
           <a class="source-link" href="https://science.nasa.gov/mars/facts/" target="_blank" rel="noopener noreferrer">Check these facts with NASA</a>
         </div>
 
-        <!-- The shared calculator uses these data values to calculate Mars weight. -->
         <div class="panel calc-box" data-gravity="0.38" data-planet="Mars">
           <h2>Weight on Mars</h2>
           <label for="mars-weight">Your weight on Earth (lbs)</label>
@@ -98,6 +101,7 @@
           <div class="result-box">You would weigh 57.0 lbs on Mars!</div>
         </div>
       </section>
+      <!-- Selectable routes reveal facts about major Martian surface features. -->
       <section class="panel feature-panel" data-feature="mars">
         <h2>Explore Mars Features</h2>
         <div class="feature-controls">
@@ -108,6 +112,7 @@
         <p id="mars-route-status" aria-live="polite">Choose a feature to learn a real fact about Mars.</p>
       </section>
     </div>
+    <!-- Shared vanilla JavaScript initializes the calculator and page interaction. -->
     <script src="script.js"></script>
   </body>
 </html>

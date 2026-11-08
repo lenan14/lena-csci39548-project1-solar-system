@@ -8,6 +8,7 @@
   </head>
   <body class="planet-page sun-page">
     <div class="site-shell">
+      <!-- Shared navigation keeps movement between the planet pages consistent. -->
       <header class="topbar">
         <div class="brand">Sun</div>
         <nav class="nav-links" aria-label="Main navigation">
@@ -25,6 +26,7 @@
         </nav>
       </header>
 
+      <!-- Hero combines the Sun illustration, summary, and quick facts. -->
       <main class="planet-hero">
         <div class="planet-visual">
           <img src="assests/sun-removebg-preview.png" alt="Sun illustration">
@@ -52,6 +54,7 @@
         </div>
       </main>
 
+      <!-- NASA archive photos include descriptive text and source credits. -->
       <section class="panel nasa-gallery-panel" aria-labelledby="nasa-gallery-title">
         <div class="nasa-gallery-heading">
           <p class="nasa-gallery-label">NASA IMAGE ARCHIVE</p>
@@ -75,6 +78,7 @@
         </div>
       </section>
 
+      <!-- Reference facts sit beside the calculator, configured with solar gravity. -->
       <section class="info-grid">
         <div class="panel">
           <h2>What Makes the Sun Glow?</h2>
@@ -98,6 +102,7 @@
           <div class="result-box">You would weigh 4185.0 lbs on the Sun!</div>
         </div>
       </section>
+      <!-- This button triggers a clearly labeled visual flare effect. -->
       <section class="panel feature-panel" data-feature="sun">
         <h2>Solar Flare Illustration</h2>
         <p class="feature-note">This is a visual effect, not a live solar flare alert or live NASA data.</p>
@@ -105,6 +110,7 @@
         <button type="button" id="sun-flare-button" aria-pressed="false">Show flare illustration</button>
       </section>
     </div>
+    <!-- Shared vanilla JavaScript initializes the calculator and page interaction. -->
     <script src="script.js"></script>
   </body>
 </html>

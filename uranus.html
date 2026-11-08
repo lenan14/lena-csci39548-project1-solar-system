@@ -8,6 +8,7 @@
   </head>
   <body class="planet-page uranus-page">
     <div class="site-shell">
+      <!-- Shared navigation keeps movement between the planet pages consistent. -->
       <header class="topbar">
         <div class="brand">Uranus</div>
         <nav class="nav-links" aria-label="Main navigation">
@@ -25,6 +26,7 @@
         </nav>
       </header>
 
+      <!-- Hero combines the planet illustration, summary, and quick facts. -->
       <main class="planet-hero">
         <div class="planet-visual">
           <img src="assests/uranus-removebg-preview.png" alt="Mint-green Uranus with turquoise bands and faint blue rings">
@@ -64,6 +66,7 @@
         </div>
       </main>
 
+      <!-- NASA archive photos include descriptive text and source credits. -->
       <section class="panel nasa-gallery-panel" aria-labelledby="nasa-gallery-title">
         <div class="nasa-gallery-heading">
           <p class="nasa-gallery-label">NASA IMAGE ARCHIVE</p>
@@ -87,6 +90,7 @@
         </div>
       </section>
 
+      <!-- Reference facts sit beside the calculator, configured with Uranus gravity. -->
       <section class="info-grid">
         <div class="panel">
           <h2>Uranus's Tilt</h2>
@@ -109,6 +113,7 @@
           <div class="result-box">You would weigh 133.5 lbs on Uranus!</div>
         </div>
       </section>
+      <!-- Season controls explain how Uranus's extreme axial tilt affects sunlight. -->
       <section class="panel feature-panel" data-feature="uranus">
         <h2>Explore Uranus's Extreme Seasons</h2>
         <div class="feature-controls">
@@ -119,6 +124,7 @@
         <p id="uranus-season-status" aria-live="polite">Choose a season to see how Uranus's tilt affects its sunlight.</p>
       </section>
     </div>
+    <!-- Shared vanilla JavaScript initializes the calculator and page interaction. -->
     <script src="script.js"></script>
   </body>
 </html>

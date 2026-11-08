@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Store visited destinations for this tab; keep the checklist usable if storage is blocked.
   const missionDialog = document.querySelector('#mission-dialog');
   if (currentPage) {
     const missionKey = 'solarSystemVisitedPages';
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const storageNote = missionDialog.querySelector('#mission-storage-note');
 
       const updateMissionList = () => {
+        // Refresh the checklist on open so its totals match the current tab session.
         let completedCount = 0;
         missionItems.forEach((item) => {
           const isComplete = visitedPages.has(item.dataset.missionPage);
@@ -66,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // Planet gravity is supplied in HTML data attributes so one calculator serves every page.
   const calculators = document.querySelectorAll('[data-gravity]');
 
   calculators.forEach((calculator) => {
@@ -89,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // The home-page orbit control toggles a CSS animation and its accessible status.
   const orbitToggle = document.querySelector('#orbit-toggle');
   if (orbitToggle) {
     const orbit = document.querySelector('.orbit');
