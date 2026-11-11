@@ -23,3 +23,6 @@ Open `webdev-day1.html` in a browser to see the homepage. Use the navigation bar
 The planet pages also have a weight calculator, at least five facts, and a NASA facts link as reference. Their colors and heading fonts vary by world while keeping a shared layout. The shared styles are in `styles.css`, and the page interactions are in `script.js`. The planet pictures are in `assests/`.
 
 Each Sun, Moon, and planet page also includes a gallery of two NASA archive images with descriptive alt text and source credits.
+
+### Video Walkthrough
+- **Video Link via Dropbox:** https://www.dropbox.com/scl/fi/xjbbtb448ai4pllbj76zk/Lena-Ngo-CSCI-39548-Video-Walkthrough-of-Solar-System-Project-and-Code.mp4?rlkey=3u3wgafl8nrxeiwc7m2383kbs&st=sfuhei3w&dl=0
