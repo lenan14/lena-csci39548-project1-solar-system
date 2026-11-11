@@ -2,11 +2,11 @@
 
 My small website about the solar system, made with plain HTML, CSS, and JavaScript. It does not use any frameworks or libraries!
 
-### Open the website
+### Open the Website
 
 Open `webdev-day1.html` in a browser to see the homepage. Use the navigation bar to visit the Sun, Moon, and planet pages. Neptune was not in the rubric, but I added it anyway because it's still a planet!
 
-### Pages and interactions
+### Pages and Interactions
 
 - **Home** Start and stop the planet animation.
 - **Sun** Show a clearly labeled solar-flare illustration (this is not a live alert by the way).
